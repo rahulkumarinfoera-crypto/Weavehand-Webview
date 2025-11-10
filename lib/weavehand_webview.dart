@@ -42,11 +42,11 @@ class _WebViewScreenState extends State<WebViewScreen> {
           },
           onWebResourceError: (error) {
             if (_pageLoaded && !error.description.contains('Blocked by client')) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text('Failed to load page: ${error.description}'),
-                ),
-              );
+              // ScaffoldMessenger.of(context).showSnackBar(
+              //   SnackBar(
+              //     content: Text('Failed to load page: ${error.description}'),
+              //   ),
+              // );
             }
           },
           onNavigationRequest: (NavigationRequest request) async {
@@ -56,9 +56,9 @@ class _WebViewScreenState extends State<WebViewScreen> {
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri, mode: LaunchMode.externalApplication);
               } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Could not launch WhatsApp.')),
-                );
+                // ScaffoldMessenger.of(context).showSnackBar(
+                //   const SnackBar(content: Text('Could not launch WhatsApp.')),
+                // );
               }
               return NavigationDecision.prevent;
             } else if (uri.scheme == 'tel' || uri.scheme == 'mailto') {
