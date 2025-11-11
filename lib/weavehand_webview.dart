@@ -8,7 +8,7 @@ class WebViewScreen extends StatefulWidget {
   @override
   State<WebViewScreen> createState() => _WebViewScreenState();
 }
-
+ 
 class _WebViewScreenState extends State<WebViewScreen> {
   late final WebViewController _controller;
   var _loadingPercentage = 0;
