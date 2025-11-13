@@ -54,7 +54,19 @@ android {
     // This block tells the release build to USE your new key
     buildTypes {
         getByName("release") {
+            // This line stays the same
             signingConfig = signingConfigs.getByName("release")
+
+            // --- ADD THESE LINES FOR PROGUARD/R8 ---
+            isMinifyEnabled = true
+            isShrinkResources = true
+            setProguardFiles(
+                listOf(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    file("proguard-rules.pro") // This points to the file you just made
+                )
+            )
+            // --- END OF NEW LINES ---
         }
     }
 }

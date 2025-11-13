@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806715633821",
+    "project_id": "gmail-login-448711",
+    "storage_bucket": "gmail-login-448711.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806715633821:android:a4b59cb86e7a4eefbd6474",
+        "android_client_info": {
+          "package_name": "com.weavehand.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806715633821-4c2rp19bq4gmvk46eoqedui9nbjgp9ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weavehand.app",
+            "certificate_hash": "c631e46091d57422ccd3cd5b9b2fea74cf6abb89"
+          }
+        },
+        {
+          "client_id": "806715633821-fj6kv3usmqn44nbdg17ksn60td72k9k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weavehand.app",
+            "certificate_hash": "008659a251f9df2061cd56efe1285fc9ea6b69ef"
+          }
+        },
+        {
+          "client_id": "806715633821-tbnecm7fbfpl34coflsvmv6m6lf0b6nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG58oQx1LLTijHvFL_VKzYPNTul0jSUzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806715633821-j78fqg0qokd3cpfuu7972p1u7fpkp3qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
